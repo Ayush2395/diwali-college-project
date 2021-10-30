@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  color: #fff;
+  background-image: url("../../diwali-react/src/components/img/bg.jpg");
+  background-size: 1580px 720px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container::before {
+  content: "";
+  height: 580px;
+  width: 1280px;
+  position: absolute;
+  background-color: rgba(201, 201, 201, 0.527);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(6px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  min-height: 90vh;
+  max-width: 100vh;
+  /* border: 1px solid black; */
+  position: relative;
+  left: 400px;
+  top: 50px;
+}
+
+.container h1 {
+  font-size: 80px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  top: -80px;
+  left: -396px;
+}
+
+.container .para1 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  left: -142px;
+  top: -80px;
+  left: -536px;
+}
+
+.container .para2 {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  left: -492px;
+  top: -80px;
+}
+.container h2 {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  top: -80px;
+  left: -529px;
+}
+.container button {
+  position: relative;
+  left: -492px;
+  height: 50px;
+  width: 180px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  padding: 5px;
+  font-size: 18px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.container button:hover {
+  border: 5px solid greenyellow;
+  color: greenyellow;
+}
+
+.container button a {
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.container button a:hover {
+  color: greenyellow;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.effects {
+  display: flex;
+  justify-content: center;
+}
+
+.effect-1 {
+  height: 180px;
+  width: 180px;
+  /* border: 1px solid green; */
+  position: absolute;
+  top: 30px;
+  border-radius: 50%;
+  background-color: rgb(255, 175, 28);
+  left: 425px;
+  z-index: -1;
+  animation: zoomIn 3s linear infinite;
+}
+.effect-2 {
+  height: 80px;
+  width: 80px;
+  border: 5px solid rgb(255, 175, 28);
+  position: absolute;
+  top: 50px;
+  /* border-radius: 50%; */
+  /* background-color: rgb(255, 175, 28); */
+  right: 85px;
+  z-index: -1;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes zoomIn {
+  0%,
+  100% {
+    transform: scale(25px);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: scale(0);
   }
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.container img{
+  display: flex;
+  position: absolute;
+  right: -80px;
+  top: 80px;
 }
