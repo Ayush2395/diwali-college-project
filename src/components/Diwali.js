@@ -1,4 +1,13 @@
 import React from "react";
+// import PinkMandala from '../../src/components/img/pink-mandala.png';
+import Mandala from "../../src/components/img/mandala.png";
+import Maa_Luxmi from "../../src/components/img/luxmi_maa.png";
+// import Ganesh from '../../src/components/img/ganesh.png';
+// import Color_mandala from '../../src/components/img/color_mandala.png';
+import Floral_mandala from "../../src/components/img/floral_mandala.png";
+import { Typewriter } from "react-simple-typewriter";
+import "react-simple-typewriter/dist/index";
+import { Link } from "react-router-dom";
 
 export default function Diwali() {
   return (
@@ -9,9 +18,9 @@ export default function Diwali() {
             <div className="item-1">
               <div className="img-box">
                 <img
-                  src="img/pink-mandala.png"
+                  src={Floral_mandala}
                   alt="pink-mandala"
-                  className="pink-mandala"
+                  className="color-mandala"
                   width="300"
                 />
               </div>
@@ -19,7 +28,7 @@ export default function Diwali() {
             <div className="item-2">
               <div className="img-box">
                 <img
-                  src="../../../img/mandala.png"
+                  src={Mandala}
                   alt="mandala"
                   className="mandala"
                   width="450"
@@ -29,7 +38,7 @@ export default function Diwali() {
             <div className="item-3">
               <div className="img-box">
                 <img
-                  src="img/luxmi_maa.png"
+                  src={Maa_Luxmi}
                   alt="luxmi-maa"
                   className="luxmi-maa"
                   width="300"
@@ -39,23 +48,46 @@ export default function Diwali() {
             <div className="item-4">
               <div className="img-box">
                 <img
-                  src="img/pink-mandala.png"
+                  src={Floral_mandala}
                   alt="pink-mandala"
-                  className="pink-mandala"
+                  className="color-mandala"
                   width="300"
                 />
               </div>
             </div>
           </div>
-        </div>
 
-        <div id="gsTitle">
-          <div className="gsTitle-title"></div>
-          <div className="gsTitle-title gsTitle-color gsTitle-a"></div>
-          <div className="gsTitle-title gsTitle-color gsTitle-b"></div>
+          <span
+            style={{
+              color: "white",
+              fontSize: "50px",
+              zIndex: 2,
+              fontFamily: "Poppins",
+              position: "relative",
+              left: "30px",
+            }}
+          >
+            <Typewriter
+              loop
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+              words={[
+                "Happy Diwali",
+                "शुभ दीपावली",
+                "നിറഞ്ഞ",
+                "ದೀಪಾವಳಿ",
+                "ਦੀਵਾਲੀ ਮੁਬਾਰਕ",
+                "শুভ দীপাবলি",
+                "دیوالی مبارک",
+              ]}
+            />
+          </span>
         </div>
+        <button><Link to='/achievements'>Our Achievements</Link></button>
       </section>
-      {/* <link rel="stylesheet" href="../../../css/diwali.css"></link> */}
     </div>
   );
 }

@@ -7,7 +7,7 @@ export default function Greet() {
     <div>
       <div className="container">
         <h1>Welcome</h1>
-        <img src={diya} width="300" alt="diya" />
+        <img className='diya' src={diya} width="300" alt="diya" />
         <p className="para1">We are</p>
         <h2>CSE</h2>
         <p className="para2">5th Semester</p>
