@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Diwali Greeting App
+
+## Description
+This is an Diwali Greeting web application, where our college journey will be shown through slides
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
