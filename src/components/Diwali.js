@@ -7,9 +7,12 @@ import Maa_Luxmi from "../../src/components/img/luxmi_maa.png";
 import Floral_mandala from "../../src/components/img/floral_mandala.png";
 import { Typewriter } from "react-simple-typewriter";
 import "react-simple-typewriter/dist/index";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 export default function Diwali() {
+  const history = useHistory();
+
   return (
     <div>
       <section className="home-section" id="home">
@@ -86,7 +89,9 @@ export default function Diwali() {
             />
           </span>
         </div>
-        <button><Link to='/achievements'>Our Achievements</Link></button>
+        <Button onClick={() => history.push("/achievements")}>
+          Our Achievements
+        </Button>
       </section>
     </div>
   );

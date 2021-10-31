@@ -32,7 +32,7 @@ body {
   max-width: 100vh;
   /* border: 1px solid black; */
   position: relative;
-  left: 410px;
+  left: -5px;
   top: 30px;
 }
 
@@ -57,7 +57,7 @@ body {
   font-size: 25px;
   font-family: "Poppins", sans-serif;
   position: relative;
-  left: -492px;
+  left: -498px;
   top: -80px;
 }
 .container h2 {
@@ -84,14 +84,7 @@ body {
 .container button:hover {
   border: 5px solid greenyellow;
   color: greenyellow;
-}
-
-.container button a {
-  text-decoration: none;
-  color: white;
-}
-.container button a:hover {
-  color: greenyellow;
+  background-color: rgba(172, 255, 47, 0.075);
 }
 
 .effects {
@@ -154,7 +147,7 @@ body {
 .container .diya {
   display: flex;
   position: absolute;
-  right: -80px;
+  right: 80px;
   top: 80px;
 }
 
@@ -190,7 +183,7 @@ body {
   animation: rotateMandala 10s linear infinite;
 }
 
-.home-section button{
+.home-section button {
   display: flex;
   height: 50px;
   width: 180px;
@@ -208,32 +201,24 @@ body {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.home-section button a{
+.home-section button a {
   text-decoration: none;
   color: white;
 }
-.home-section button:hover{
+.home-section button:hover {
   border: 3px solid greenyellow;
   border-radius: 30px;
+  background-color: rgba(172, 255, 47, 0.075);
 }
-
-.slides-btn {
-  display: flex;
-  background-color: transparent;
-  border: 1px solid white;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  /* font: 18px; */
-  height: 50px;
-  width: 180px;
-  text-decoration: none;
-  position: relative;
-  top: 50px;
+::-webkit-scrollbar{
+  width: 10px;
 }
-
-.slides-btn a{
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
+::-webkit-scrollbar-track{
+  border-radius: 15px;
+  background-color: rgb(253, 81, 1);
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(245, 165, 18);
+  border-radius: 5px;
+  
 }
