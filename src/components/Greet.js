@@ -2,9 +2,9 @@ import { Button } from "react-bootstrap";
 import React from "react";
 import { useHistory } from "react-router-dom";
 import diya from "../components/img/diya.png";
+import ladiya from "../components/img/ladiya.png";
 
 export default function Greet() {
-
   const history = useHistory();
 
   return (
@@ -15,7 +15,15 @@ export default function Greet() {
         <p className="para1">We are</p>
         <h2>CSE</h2>
         <p className="para2">Department</p>
-        <Button onClick={()=> history.push('/diwali')}>Say Green To...</Button>
+        <Button onClick={() => history.push("/diwali")}>Say Green To...</Button>
+
+        <div id="jhalar">
+          <img src={ladiya} alt="ladiya" width="300" />
+          <img src={ladiya} alt="ladiya" width="300" />
+          <img src={ladiya} alt="ladiya" width="300" />
+          <img src={ladiya} alt="ladiya" width="300" />
+          <img src={ladiya} alt="ladiya" width="300" />
+        </div>
       </div>
 
       <div className="effects">

@@ -222,3 +222,14 @@ body {
   border-radius: 5px;
   
 }
+
+#jhalar{
+  display: flex;
+  position: absolute;
+  top: -180px;
+  justify-content: space-evenly;
+}
+
+#jhalar img:nth-child(even){
+  z-index: -1;
+}
